@@ -95,7 +95,7 @@ public class RestaurantDao implements Workdiv<RestaurantVO>, PLog {
 
 		return restaurant;
 	}
-
+	//csv에 저장하기
 	@Override
 	public int saveToCSV() {
 		try (BufferedWriter writer = new BufferedWriter(new FileWriter(Restaurant_DATA));) {
@@ -116,17 +116,17 @@ public class RestaurantDao implements Workdiv<RestaurantVO>, PLog {
 			return 0;
 		}
 	}
-
+	//전체 목록 조회하기
 	@Override
 	public List<RestaurantVO> doRetrieve() {
 		return restaurant;
 	}
-
+	//단건 목록 조회하기
 	@Override
 	public RestaurantVO doSelctOne(String resName) {
 		return restaurantMap.get(resName.trim());
 	}
-
+	//목록 삭제하기
 	@Override
 	public int doDelete(String resName) {
 		RestaurantVO removed = restaurantMap.remove(resName);
