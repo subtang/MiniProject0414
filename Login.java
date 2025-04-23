@@ -1,7 +1,8 @@
+package com.pcwk.ehr.projectcrud;
 //Login
 import java.util.Scanner;
 
-public class AuthManager {
+public class Login {
 
     private static final String ADMIN_ID = "admin";
     private static final String ADMIN_PASSWORD = "1234";
@@ -26,14 +27,14 @@ public class AuthManager {
 }
 
 //Login 테스트 코드
-
-public class Main {
-    public static void main(String[] args) {
-        if (AuthManager.login()) {
-            // 관리자 메뉴 보여주기
-            System.out.println("여기에 등록/수정/삭제 기능 연결!");
-        } else {
-            System.out.println("메인 메뉴로 돌아갑니다...");
-        }
-    }
-}
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        if (Login.login()) {
+//            // 관리자 메뉴 보여주기
+//            System.out.println("여기에 등록/수정/삭제 기능 연결!");
+//        } else {
+//            System.out.println("메인 메뉴로 돌아갑니다...");
+//        }
+//    }
+//}

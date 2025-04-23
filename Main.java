@@ -1,4 +1,4 @@
-[Main]
+package com.pcwk.ehr.projectmain;
 
 import java.util.*;
 

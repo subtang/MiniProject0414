@@ -1,7 +1,8 @@
+package com.pcwk.ehr.projectcrud;
 //등록코드
-import java.util.Scanner;
+import java.util.*;
 
-public class RestaurantManager {
+public class registration {
 
     // 기존 loadRestaurants()와 saveRestaurants() 메서드 포함된 상태라고 가정
 
@@ -28,11 +29,11 @@ public class RestaurantManager {
     }
 }
 //등록 테스트 코드
-public class Main {
-    public static void main(String[] args) {
-        String file = "restaurants.csv";
-        List<Restaurant> restaurants = RestaurantManager.loadRestaurants(file);
-
-        RestaurantManager.addRestaurant(restaurants, file);
-    }
-}
+//public class Main {
+//    public static void main(String[] args) {
+//        String file = "restaurants.csv";
+//        List<Restaurant> restaurants = RestaurantManager.loadRestaurants(file);
+//
+//        RestaurantManager.addRestaurant(restaurants, file);
+//    }
+//}

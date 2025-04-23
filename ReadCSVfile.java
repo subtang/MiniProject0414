@@ -1,7 +1,10 @@
+package com.pcwk.ehr.projectcrud;
 //Read CSVfile Code
 
+import java.util.*;
+import java.io.*;
 
-public class RestaurantManager {
+public class ReadCSVfile {
 
     public static List<Restaurant> loadRestaurants(String filename) {
         List<Restaurant> restaurantList = new ArrayList<>();

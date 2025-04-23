@@ -1,3 +1,5 @@
+package com.pcwk.ehr.projectcrud;
+
 //Delete
 public static void deleteRestaurant(List<Restaurant> restaurantList, String filename) {
     Scanner scanner = new Scanner(System.in);
@@ -14,13 +16,14 @@ public static void deleteRestaurant(List<Restaurant> restaurantList, String file
         System.out.println("해당 가게를 찾을 수 없습니다.");
     }
 }
+}
 
 //Delete Test Code
-public class Main {
-    public static void main(String[] args) {
-        String file = "restaurants.csv";
-        List<Restaurant> restaurants = RestaurantManager.loadRestaurants(file);
-
-        RestaurantManager.deleteRestaurant(restaurants, file);
-    }
-}
+//public class Main {
+//    public static void main(String[] args) {
+//        String file = "restaurants.csv";
+//        List<Restaurant> restaurants = RestaurantManager.loadRestaurants(file);
+//
+//        RestaurantManager.deleteRestaurant(restaurants, file);
+//    }
+//}

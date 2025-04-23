@@ -1,3 +1,5 @@
+package com.pcwk.ehr.projectcrud;
+
 //Restaurant 코드
 
 public class Restaurant {

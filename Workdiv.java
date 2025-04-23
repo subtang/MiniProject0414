@@ -11,7 +11,7 @@
  * @since  :2024-09-09
  * @version: 0.5
  */
-package com.pcwk.ehr.restaurant.cmn;
+package com.pcwk.ehr.projectcrud;
 
 import java.util.List;
 

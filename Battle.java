@@ -1,7 +1,9 @@
-//Battle
-import java.util.Random;
+package com.pcwk.ehr.projectbattle;
 
-public class RestaurantManager {
+//Battle
+import java.util.*;
+
+public class Battle {
 
     //  기존 메서드들 생략
 
@@ -31,12 +33,4 @@ public class RestaurantManager {
     }
 }
 
-//Battle Test Code
-public class Main {
-    public static void main(String[] args) {
-        String file = "restaurants.csv";
-        List<Restaurant> restaurants = RestaurantManager.loadRestaurants(file);
 
-        RestaurantManager.battleMode(restaurants);
-    }
-}

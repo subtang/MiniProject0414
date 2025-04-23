@@ -1,4 +1,6 @@
+package com.pcwk.ehr.projectcrud;
 //Correcton
+
 public static void updateRestaurant(List<Restaurant> restaurantList, String filename) {
     Scanner scanner = new Scanner(System.in);
 
@@ -54,13 +56,14 @@ public void setRmenuName(String RmenuName) {
 public void setRmenuCost(int RmenuCost) {
     this.RmenuCost = RmenuCost;
 }
+}
 
 //Correction Test Code
-public class Main {
-    public static void main(String[] args) {
-        String file = "restaurants.csv";
-        List<Restaurant> restaurants = RestaurantManager.loadRestaurants(file);
-
-        RestaurantManager.updateRestaurant(restaurants, file);
-    }
-}
+//public class Main {
+//    public static void main(String[] args) {
+//        String file = "restaurants.csv";
+//        List<Restaurant> restaurants = RestaurantManager.loadRestaurants(file);
+//
+//        RestaurantManager.updateRestaurant(restaurants, file);
+//    }
+//}
