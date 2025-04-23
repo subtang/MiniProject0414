@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String file = "D:\\JAP_20250317\\01_JAVA\\workspace\\JMember\\data\\restaurantListHong_edit - 시트1.csv";
+        String file = "D:\\JAP_20250317\\01_JAVA\\workspace\\JMember\\data\\restaurantListHong_edit - 시트1 (1).csv";
         List<Restaurant> restaurants = ReadCSVfile.loadRestaurants(file);
 
         while (true) {
