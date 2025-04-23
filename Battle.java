@@ -1,7 +1,10 @@
 package com.pcwk.ehr.projectbattle;
 
 //Battle
-import java.util.*;
+import java.util.List;
+import java.util.Random;
+
+import com.pcwk.ehr.projectcrud.Restaurant;
 
 public class B_Restaurant {
 
