@@ -26,15 +26,4 @@ public class Login {
     }
 }
 
-//Login 테스트 코드
-//
-//public class Main {
-//    public static void main(String[] args) {
-//        if (Login.login()) {
-//            // 관리자 메뉴 보여주기
-//            System.out.println("여기에 등록/수정/삭제 기능 연결!");
-//        } else {
-//            System.out.println("메인 메뉴로 돌아갑니다...");
-//        }
-//    }
-//}
+

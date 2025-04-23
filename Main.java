@@ -1,13 +1,16 @@
 package com.pcwk.ehr.projectmain;
 
+import com.pcwk.ehr.projectcrud.*;
+import com.pcwk.ehr.projectbattle.*;
+
 import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String file = "restaurants.csv";
-        List<Restaurant> restaurants = RestaurantManager.loadRestaurants(file);
+        String file = "D:\\JAP_20250317\\01_JAVA\\workspace\\JMember\\data\\restaurantListHong_edit - 시트1 (1).csv";
+        List<Restaurant> restaurants = ReadCSVfile.loadRestaurants(file);
 
         while (true) {
             System.out.println("\n 맛집 추천 프로그램 🍴");
@@ -22,7 +25,7 @@ public class Main {
                     R_Restaurant(restaurants);
                     break;
                 case "2":
-                    if (AuthManager.login()) {
+                    if (Login.login()) {
                         adminMenu(restaurants, file);
                     }
                     break;

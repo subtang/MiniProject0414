@@ -26,6 +26,8 @@ public class ReadCSVfile {
             }
         } catch (IOException e) {
             System.out.println("파일 읽기 오류: " + e.getMessage());
+        }catch(Exception e) {
+        	e.printStackTrace();
         }
         return restaurantList;
     }

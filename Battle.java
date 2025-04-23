@@ -3,6 +3,7 @@ package com.pcwk.ehr.projectbattle;
 //Battle
 import java.util.List;
 import java.util.Random;
+import java.util.Scanner;
 
 import com.pcwk.ehr.projectcrud.Restaurant;
 
@@ -28,11 +29,19 @@ public class B_Restaurant {
         Restaurant r1 = restaurantList.get(index1);
         Restaurant r2 = restaurantList.get(index2);
 
-        System.out.println(" 맛집 배틀! 다음 두 곳 중 어디가 더 끌리나요?");
-        System.out.println("\n[1] " + r1);
-        System.out.println("[2] " + r2);
+        System.out.print(" 맛집 배틀! 다음 두 곳 중 어디가 더 끌리나요?");
+        System.out.print("\n[1] " + r1);
+        System.out.print("\n[2] " + r2);
 
         // 선택은 여기선 안 받아도 되고, 필요하면 추가 가능!
+//        Scanner sc = new Scanner(System.in);
+//        int num=sc.nextInt();
+//        if(num==1) {
+//        	
+//        }else if(num==2) {
+//        	
+//        }
+        
     }
 }
 
