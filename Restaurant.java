@@ -21,12 +21,13 @@ public class Restaurant {
 	public Restaurant(String resName, String rmenuName, int rmenuCost, double rating, int distance, String breakDay) {
 		super();
 		this.resName = resName;
-		RmenuName = rmenuName;
-		RmenuCost = rmenuCost;
+		this.RmenuName = rmenuName;
+		this.RmenuCost = rmenuCost;
 		this.rating = rating;
 		this.distance = distance;
 		this.breakDay = breakDay;
 	}
+	
 
 
     public int getECost() {
@@ -69,7 +70,7 @@ public class Restaurant {
 	 * @param rmenuName the rmenuName to set
 	 */
 	public void setRmenuName(String rmenuName) {
-		RmenuName = rmenuName;
+		this.RmenuName = rmenuName;
 	}
 
 
@@ -85,7 +86,7 @@ public class Restaurant {
 	 * @param rmenuCost the rmenuCost to set
 	 */
 	public void setRmenuCost(int rmenuCost) {
-		RmenuCost = rmenuCost;
+		this.RmenuCost = rmenuCost;
 	}
 
 
@@ -137,7 +138,5 @@ public class Restaurant {
 	}
 
 
-
-    // getter & setter 생략 가능
 	
 }

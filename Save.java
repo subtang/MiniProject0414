@@ -52,18 +52,4 @@ public class Save {
 
 }
 
-//Save Test Code
 
-//public class Main {
-//    public static void main(String[] args) {
-//        List<Restaurant> restaurants = RestaurantManager.loadRestaurants("restaurants.csv");
-//
-//        // 예시로 첫 번째 레스토랑 삭제
-//        if (!restaurants.isEmpty()) {
-//            restaurants.remove(0);
-//        }
-//
-//        // 저장
-//        RestaurantManager.saveRestaurants("restaurants.csv", restaurants);
-//    }
-//}
