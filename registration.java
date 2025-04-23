@@ -2,7 +2,7 @@ package com.pcwk.ehr.projectcrud;
 //등록코드
 import java.util.*;
 
-public class registration {
+public class C_Restaurant {
 
     // 기존 loadRestaurants()와 saveRestaurants() 메서드 포함된 상태라고 가정
 

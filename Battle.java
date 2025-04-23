@@ -3,7 +3,7 @@ package com.pcwk.ehr.projectbattle;
 //Battle
 import java.util.*;
 
-public class Battle {
+public class B_Restaurant {
 
     //  기존 메서드들 생략
 
