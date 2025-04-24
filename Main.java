@@ -51,10 +51,10 @@ public class Main {
 
             switch (choice) {
                 case "1":
-                    S_Restaurant(restaurants);
+                    RestaurantManager.S_Restaurant(restaurants);  // RestaurantManager 메서드 호출
                     break;
                 case "2":
-                    B_Restaurant(restaurants);
+                    RestaurantManager.B_S_Mark(restaurants);  // RestaurantManager 메서드 호출
                     break;
                 case "0":
                     return;
@@ -78,13 +78,13 @@ public class Main {
 
             switch (choice) {
                 case "1":
-                    C_Restaurant(restaurants, file);
+                    RestaurantManager.C_Details(restaurants, file);  // RestaurantManager 메서드 호출
                     break;
                 case "2":
-                    U_Restaurant(restaurants, file);
+                    RestaurantManager.S_U_Restaurant(restaurants, file);  // RestaurantManager 메서드 호출
                     break;
                 case "3":
-                    D_Restaurant(restaurants, file);
+                    RestaurantManager.S_D_Restaurant(restaurants, file);  // RestaurantManager 메서드 호출
                     break;
                 case "0":
                     return;
@@ -93,26 +93,4 @@ public class Main {
             }
         }
     }
-
-    public static void S_Restaurant(List<Restaurant> restaurants) {
-        for (Restaurant r : restaurants) {
-            System.out.println(r);
-        }
-    }
-
-    public static void C_Restaurant(List<Restaurant> restaurants, String file) {
-        RestaurantManager.C_Details(restaurants, file);
-    }
-
-    public static void U_Restaurant(List<Restaurant> restaurants, String file) {
-        RestaurantManager.S_U_Restaurant(restaurants, file);
-    }
-
-    public static void D_Restaurant(List<Restaurant> restaurants, String file) {
-        RestaurantManager.S_D_Restaurant(restaurants, file);
-    }
-
-    public static void B_Restaurant(List<Restaurant> restaurants) {
-        List<Restaurant> selected = RestaurantManager.Restaurant_Mark(restaurants);
-        RestaurantManager.B_S_Mark(selected);
-    }
+}
