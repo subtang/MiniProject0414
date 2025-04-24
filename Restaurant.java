@@ -37,8 +37,8 @@ public class Restaurant {
 
 	@Override
 	public String toString() {
-		return "가성비 맛집 [가게이름:" + resName + ", 대표메뉴:" + RmenuName + ", 가격:" + RmenuCost + "원, 평점:"
-				+ rating + "점, 거리:" + distance + "m, 휴무일:" + breakDay + ", 가성비:" + getECost() + "점]";
+		return "가성비 맛집 [가게이름:" + resName + "| 대표메뉴:" + RmenuName + "| 가격:" + RmenuCost + "원| 평점:"
+				+ rating + "점| 거리:" + distance + "m| 휴무일:" + breakDay + "| 가성비:" + getECost() + "점]";
 	}
 
 
