@@ -9,7 +9,6 @@ import com.pcwk.ehr.projectcrud.Restaurant;
 
 public class B_Restaurant {
 
-    //  기존 메서드들 생략
 
 	public static void battleMode(List<Restaurant> restaurantList) {
 	    if (restaurantList.size() < 2) {

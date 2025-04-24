@@ -3,8 +3,11 @@ package com.pcwk.ehr.projectcrud;
 
 import java.util.*;
 import java.io.*;
+import org.apache.logging.log4j.*;
+import com.pcwk.ehr.ed01.*;
 
 public class ReadCSVfile {
+	static final Logger LOG=LogManager.getLogger(Main.class);
 
     public static List<Restaurant> loadRestaurants(String filename) {
         
@@ -25,8 +28,9 @@ public class ReadCSVfile {
                 restaurantList.add(new Restaurant(resName,rmenuName,rmenuCost,rating,distance,breakday));
             }
         } catch (IOException e) {
-            System.out.println("파일 읽기 오류: " + e.getMessage());
+            LOG.error("파일 읽기 오류: " + e.getMessage());
         }catch(Exception e) {
+        	LOG.error("파일 읽기 오류: " + e.getMessage());
         	e.printStackTrace();
         }
         return restaurantList;

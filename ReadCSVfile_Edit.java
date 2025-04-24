@@ -7,8 +7,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import org.apache.logging.log4j.*;
+import com.pcwk.ehr.ed01.*;
 
 public class ReadCSVfile_Edit {
+	
+	static final Logger LOG=LogManager.getLogger(Main.class);
 
 	public static final String Restaurant_DATA = ".\\data\\restaurantListHong.csv.csv";
 
@@ -48,10 +52,10 @@ public class ReadCSVfile_Edit {
 			}
 
 		} catch (IOException e) {
-			System.out.println("파일 읽기 오류: " + e.getMessage());
+			LOG.error("파일 읽기 오류: " + e.getMessage());
 			e.printStackTrace();
 		} catch (Exception e) {
-			System.out.println("파일 읽기 오류: " + e.getMessage());
+			LOG.error("파일 읽기 오류: " + e.getMessage());
 			e.printStackTrace();
 		}
 		return restaurantList;

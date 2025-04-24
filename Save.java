@@ -2,9 +2,13 @@ package com.pcwk.ehr.projectcrud;
 
 import java.io.*;
 import java.util.*;
+import org.apache.logging.log4j.*;
+
+import com.pcwk.ehr.ed01.*;
 
 //Savecode
 public class Save {
+	static final Logger LOG=LogManager.getLogger(Main.class);
 	public String getResName() {
 		return getResName();
 	}
@@ -44,7 +48,7 @@ public class Save {
 			}
 			System.out.println("저장 완료!");
 		} catch (IOException e) {
-			System.out.println("파일 저장 오류: " + e.getMessage());
+			LOG.error("파일 저장 오류: " + e.getMessage());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
